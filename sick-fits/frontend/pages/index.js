@@ -1,3 +1,5 @@
-import ProductsPage from './products';
+export { default } from './products';
 
-export default ProductsPage;
+// import ProductsPage from './products/index';
+
+// export default ProductsPage;
