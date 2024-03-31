@@ -1,7 +1,6 @@
 import { password, relationship, text } from '@keystone-next/fields';
 import { list } from '@keystone-next/keystone/schema';
 
-// named export
 export const User = list({
   // access:
   // ui
@@ -17,6 +16,6 @@ export const User = list({
         itemView: { fieldMode: 'read' },
       },
     }),
-    // todo add roles cart and orders
+    orders: relationship({ ref: 'Order.user', many: true }),
   },
 });
